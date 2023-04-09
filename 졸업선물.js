@@ -3,7 +3,7 @@ function solution(m, product) {
   let n = product.length; //5
   product.sort((a, b) => a[0] + a[1] - b[0] + b[1]);
   for (let i = 0; i < n; i++) {
-    let seed = m - (a[i][0] / 2 + a[i][1]); //할인쿠폰을 하나의 경우마다 다 써보자.
+    let seed = m - (product[i][0] / 2 + product[i][1]); //할인쿠폰을 하나의 경우마다 다 써보자.
     let cnt = 1;
     for (let j = 0; j < n; j++) {
       if (j !== i && product[j][0] + product[j][1] > seed) break; //헛돌지 않도록 하기 위해서

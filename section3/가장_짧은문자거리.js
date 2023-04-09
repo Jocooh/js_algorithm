@@ -24,3 +24,31 @@ function solution(s, t) {
 
 let str = 'teachermode';
 console.log(solution(str, 'e'));
+
+// function solution(s, t) {
+//   let answer = [];
+//   let cnt = 0;
+//   //왼->오 방향
+//   for (let i = 0; i < s.length; i++) {
+//     if (s[i] !== t) {
+//       cnt++;
+//       answer.push(cnt);
+//     } else {
+//       cnt = 0;
+//       answer.push(cnt);
+//     }
+//   }
+//   cnt = 0;
+//   for (let i = s.length - 1; i >= 0; i--) {
+//     if (s[i] !== t) {
+//       cnt++;
+//       answer[i] = Math.min(cnt, answer[i]);
+//     } else {
+//       cnt = 0;
+//     }
+//   }
+//   return answer;
+//   }
+
+//   let str = 'teachermode';
+//   console.log(solution(str, 'e'));
