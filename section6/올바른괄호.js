@@ -5,12 +5,13 @@ function solution(s) {
     if (x === '(') stack.push(x);
     else {
       if (stack.length === 0) {
+        //닫기가 많았을 경우
         return 'NO';
       }
       stack.pop();
     }
   }
-  if (stack.length > 0) return 'NO'; //열기가 남아있다면
+  if (stack.length > 0) return 'NO'; //열기가 많았을 경우
   return answer;
 }
 
