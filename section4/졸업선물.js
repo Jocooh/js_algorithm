@@ -9,7 +9,7 @@ function solution(m, product) {
       if (j !== i && product[j][0] + product[j][1] > seed) break; //헛돌지 않도록 하기 위해서
       if (j !== i && product[j][0] + product[j][1] <= seed) {
         //남아있는 돈 보다 가격이 아직 적다면
-        money -= product[j][0] + product[j][1];
+        seed -= product[j][0] + product[j][1];
         cnt++;
       }
     }
