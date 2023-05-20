@@ -31,3 +31,8 @@ let a = [
 
 let b = [1, 5, 3, 5, 1, 2, 1, 4];
 console.log(solution(a, b));
+
+//1. 뽑는 순서 forEach
+//2. for문으로 board의 위치를 잡는다.
+//3. 0이 아니라면 stack과 비교
+//4. 0이라면 break(필수)
