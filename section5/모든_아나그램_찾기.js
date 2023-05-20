@@ -37,3 +37,8 @@ function solution(s, t) {
 let a = 'bacaAacba';
 let b = 'abc';
 console.log(solution(a, b));
+
+//1.초기세팅으로 기준이 되는 문자열(t)을 해쉬로 넣는다.
+//2.긴 문자열(s)에서 2개만 먼저 해쉬에 넣는다.
+//3. lt,rt,를 가지고 투포인터로 하나씩 추가하고 삭제한다.(sH)
+//4. 3번과정에서 기준이 되는 해쉬(tH)와 비교한다.
